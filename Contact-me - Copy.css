@@ -42,34 +42,7 @@ header nav a{
     font-size: 14px;
     color:azure;
     white-space: nowrap; /* Prevent text from wrapping */
-}
-
-img {
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */  
-    object-fit: cover; /* Scale the image to cover the area */
-    position: relative; /* Allows the image to be moved */
-    z-index: -1;
-    top: 60px; /* Adjust the image downward by 50px */
-    filter: brightness(0.7) 
-    
-}
-  
-h2 {
-    font-size: 30px;
-    margin-top: 0;
-    color: rgb(0, 237, 245);    
-    display: block;
-    text-align: center;
-
-}
-
-h3 {
-    font-size: 15px;
-    text-align: center;
-    color: azure;
-
-}
+}   
    
 footer {
     font-size: small;
@@ -77,6 +50,7 @@ footer {
     color: azure;
     padding: 10px 0;
     background-color: #071116;
+    z-index: 10;
 
 }
 
@@ -86,7 +60,7 @@ footer {
   box-sizing: border-box; 
 }
 
-.box-container {
+.logo-container {
   display: flex;
   flex-wrap: wrap;
   gap: 150px;
@@ -95,14 +69,13 @@ footer {
   justify-content: center;
 }
 
-.box{
+.logo{
     display: flex;  
     position: relative;
     flex-direction: column;
-    height: 350px;
-    width: 350px;
+    height: 160px;
+    width: 160px;
     text-align: center;
-    padding: 20px;
     border-radius: 40px;
     background-color: black;
     align-items: center;
@@ -110,16 +83,16 @@ footer {
     cursor: pointer;
 }
 
-.box h2{
-  margin-bottom: 60px;
+.logo img{
+    width: 80%;
 }
 
-.box::before,.box::after{
+.logo::before,.logo::after{
     content: '';
     position: absolute;
     border-radius: 40px;
-    width: 365px;
-    height: 365px;
+    width: 170px;
+    height: 170px;
     background-image: linear-gradient(
     225deg,
     hsl(151deg 97% 54%) 0%,
@@ -135,7 +108,7 @@ footer {
 
   }
 
-  .box::after{
+  .logo::after{
     filter: blur(30px);
   }
 
