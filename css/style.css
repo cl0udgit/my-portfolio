@@ -21,8 +21,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
-    padding: 0.8% 1.8%;
+    gap: 70px;
+    padding: 1.8% 1.8%;
     z-index: 10;
     background-color: #071116;
     overflow: hidden; /* Prevent overflow beyond viewport */
@@ -39,7 +39,7 @@ header a:first-of-type {
 header nav {
   display: flex;
   flex-wrap: nowrap; /* Prevent wrapping into columns */
-  gap: 10px; /* Add spacing between links */
+  gap: 30px; /* Add spacing between links */
   overflow-x: auto; /* Enable horizontal scrolling */
   scrollbar-width: none; /* Hide scrollbar */
   &::-webkit-scrollbar{
@@ -50,7 +50,6 @@ header nav {
 
 header nav a{
     text-decoration: none; /* Remove underline */
-    margin-right: 20px;
     font-size: 14px;
     color:azure;
     white-space: nowrap; /* Prevent text from wrapping */
