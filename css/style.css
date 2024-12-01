@@ -18,14 +18,21 @@ header{
     color: azure;
     position: fixed;
     width: 100%;
-    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
     padding: 0.8% 1.8%;
     z-index: 10;
     background-color: #071116;
+    overflow: hidden; /* Prevent overflow beyond viewport */
 
+}
+
+/* Yash Shivle stays fixed on the left */
+header a:first-of-type {
+  flex-shrink: 0; /* Prevent shrinking */
+  margin-right: auto; /* Push other items to the right */
 }
 
 /* Make Navigation Links Stay in One Row */
@@ -33,6 +40,11 @@ header nav {
   display: flex;
   flex-wrap: nowrap; /* Prevent wrapping into columns */
   gap: 10px; /* Add spacing between links */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scrollbar-width: none; /* Hide scrollbar */
+  &::-webkit-scrollbar{
+      display: none; /* Hide scrollbar on Chrome, Edge, and Safari */
+  }
   margin-right: 4%;
 }
 
