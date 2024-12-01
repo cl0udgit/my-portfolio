@@ -62,7 +62,7 @@ img {
     object-fit: cover; /* Scale the image to cover the area */
     position: relative; /* Allows the image to be moved */
     z-index: -1;
-    top: 60px; /* Adjust the image downward by 50px */
+    top: 40px; /* Adjust the image downward by 50px */
     filter: brightness(0.7) 
     
 }
